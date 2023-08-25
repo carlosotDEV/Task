@@ -1,0 +1,217 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Lora&display=swap');
+
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'lora', Helvetica, sans-serif;
+}
+
+
+
+.paralax{
+    width: 100%;
+    background-image: url(imagens/cortinared.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    height: 700px;
+    position: relative;
+
+
+}
+
+.paralax:after{
+    content: "";
+    width: 100%;
+    height: 92%;
+    background-image:linear-gradient(to bottom, transparent, rgba(0,0,0,0) 40%, #000 100% );
+    position: absolute;
+    
+    z-index: 1;
+}
+
+.vogue{
+    color: white;
+    font-size: 50px;
+    position: relative;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+}
+
+.sub-title{
+    color: white;
+    bottom: 0px;
+    text-align: center;
+    font-size: 0.4em;
+    margin-top: 9px;
+}
+
+.papeis{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    
+}
+
+.papeis>a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.conteudo{
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(to top,rgb(10, 10, 56), #1a1f3f, #101227, rgba(0, 0, 0, 0.993)  );
+    position: relative;
+}
+
+.texto{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.img-cisne{
+    width: 300px;
+    height: 200px;
+    
+    margin: 14px;
+}
+
+.texto-cisne{
+    color: white;
+    font-size: 1.3em;
+    
+}
+
+.topicos{
+    width: 100%;
+    height: 300px;
+    background-color: #cfd8dc;
+}
+
+.topicos>h1{
+    text-align: center;
+}
+
+.topicos>h1:after{
+    content: "";
+    width: 180px;
+    height: 4px;
+    margin: auto;
+    margin-top: 10px;
+    display: block;
+    background-color: #1a1f3f;
+    border-radius: 2px;
+    
+}
+
+.tops{
+    width:70% ;
+    margin: auto;
+    display: flex;
+    
+}
+
+.tops>ul{
+    margin: auto;  
+}
+
+.tops>ul>li{
+    list-style: none;
+    color: #1a1f3f;
+    font-size: 30px;
+    margin: 20px; 
+}
+
+.carta{
+    width: 100%;
+    height: 400px;
+    background-color: #cfd8dc;
+}
+
+.box-carta{
+    background-color: white;
+    width: 320px;
+    height: 320px;
+    margin: auto;
+    box-shadow: black -3px 3px 5px;
+    border: 1px solid black;
+    border-radius: 2px 5px;
+}
+
+.poema>li{
+    font-family: 'Caveat', sans-serif;
+    list-style: none;
+    font-size: 30px;
+}
+
+footer{
+    width: 100%;
+    height: 60px;
+    background-color:rgb(10, 10, 56);
+    text-align: center;
+}
+
+footer>nav{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+footer>nav>a{
+    text-decoration: none;
+    color: white;
+    padding: 12px;
+    
+
+}
+
+@media screen and (max-width:570px) {
+    .texto-cisne{
+        font-size: 1.1em;
+    }
+    .papeis>a{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:1500px) and (min-width:1100px) {
+    .texto-cisne{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .texto{
+        display: flex;
+        flex-direction: column;
+    }
+    .img-cisne{
+        width: 200px;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .texto.cisne{
+        margin-top: 17px;
+    }
+}
+
+
+
